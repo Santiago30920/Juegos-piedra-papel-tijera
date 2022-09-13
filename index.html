@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./assets/styles/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div class="general">
+    <div class="content">
+      <div class="properties">
+        <p>Rock</p> 
+        <p>Paper</p> 
+        <p>Scissors</p>
+      </div>
+      <div class="score">
+        <p style="color: #0077b6; font-size: 14px;">SCORE</p>
+        <p id="pointer" class="totalPointer">0</p>
+      </div>
+    </div>
+    <div class="game" id="game">
+      <div class="firstButton">
+        <button class="rock" id="rock" onclick="startGame('rock')"><i class="fa fa-hand-grab-o"></i></button>
+        <button class="Scissors" id="scissors" onclick="startGame('scissors')"><i class="fa fa-hand-scissors-o"></i></button>
+      </div>
+      <button class="paper" id="paper" onclick="startGame('paper')"><i class="fa fa-hand-paper-o"></i></button>
+    </div>
+    <div class="select" id="select">
+      <div>
+        <p>YOU PICKED</p>
+        <button id="yourSelect" class=""><i class="" id="yourIcon"></i></button>
+      </div>
+      <div style="display: block; margin: 70px 15px;">
+        <p id="resultGame"></p>
+        <button class="newGame" onclick="newGame()">PLAY AGAIN</button>
+      </div>
+      <div style="margin: 0 0 0 auto;">
+        <p>THE HOUSE PICKED</p>
+        <button id="botSelect" class=""><i class="" id="botIcon"></i></button>
+      </div>
+    </div>
+    <div class="rules">
+      <button id="myBtn"> RULES </button>
+    </div>
+  </div>
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>RULES</p>
+    <img src="./assets/image/Captura de pantalla 2022-09-13 094356.png" class="image" alt="reglas">
+  </div>
+
+</div>
+  <script src="./assets/js/config.js"></script>
+</body>
+</html>

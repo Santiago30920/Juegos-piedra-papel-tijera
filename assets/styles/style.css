@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.general {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: radial-gradient(circle, #255597, #1c447b, #133361, #092448, #031530);
+}
+
+.content {
+    width: 200px;
+    margin: 60px auto;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+
+.content>.properties {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+.content>.score {
+    background-color: white;
+    display: block;
+    padding: 10px 15px;
+    margin: 0 0 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.totalPointer {
+    color: gray;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+    text-align: center;
+}
+
+.firstButton {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.rock {
+    padding: 30px;
+    border: 15px solid rgb(0, 127, 206);
+    font-size: 50px;
+    border-radius: 100%;
+}
+
+.Scissors {
+    padding: 30px;
+    border: 15px solid rgb(255, 204, 0);
+    font-size: 50px;
+    border-radius: 100%;
+    margin: 0 0 0 auto;
+}
+
+.paper {
+    margin-top: 20px;
+    padding: 30px;
+    border: 15px solid rgb(218, 14, 14);
+    font-size: 50px;
+    border-radius: 100%;
+}
+
+.rules {
+    width: 150px;
+    margin: 5% 0 0 auto;
+}
+
+.rules>button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7.5px 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.select {
+    width: 400px;
+    margin: 0 auto;
+    display: none;
+}
+
+.select>div {
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.newGame {
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#resultGame {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+.image{
+    width: 100%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 20px;
+  }
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 561px) {
+    .modal-content {
+        width: 80%;
+    }
+    .firstButton {
+        width: 100%;
+        display: contents;
+    }
+
+    .select {
+        width: 100%;
+    }
+}
